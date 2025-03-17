@@ -1,0 +1,1 @@
+Get instant formatted html from inserting a website link or html that you copied.
