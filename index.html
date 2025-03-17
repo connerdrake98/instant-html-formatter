@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Instant HTML Formatter</title>
+  <!-- Link to CSS file -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header>
+    <img src="assets/images/logo.png" alt="Logo" class="logo" />
+    <h1>Instant HTML Formatter</h1>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="about.html">About</a> |
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="input-section">
+      <form id="text-form">
+        <label for="input-text">Enter URL or HTML:</label>
+        <textarea id="input-text" name="input_text" placeholder="Paste URL or raw HTML here..."></textarea>
+        <button type="submit">Format HTML</button>
+      </form>
+    </section>
+
+    <section id="result-section" style="display:none;">
+      <h2>Formatted HTML</h2>
+      <pre id="result-text"></pre>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Instant HTML Formatter. All rights reserved.</p>
+  </footer>
+
+  <!-- Load js-beautify from CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.14.7/beautify-html.min.js"></script>
+  <!-- Load helper functions and main script -->
+  <script src="assets/js/helpers.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
